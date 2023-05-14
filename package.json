@@ -1,0 +1,22 @@
+{
+  "name": "banggu",
+  "version": "1.0.0",
+  "description": "jetson server",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjsdn0124/GradProj_Server.git"
+  },
+  "author": "Geonu Lim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rjsdn0124/GradProj_Server/issues"
+  },
+  "homepage": "https://github.com/rjsdn0124/GradProj_Server#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
