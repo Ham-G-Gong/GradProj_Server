@@ -5,8 +5,8 @@ const { exec } = require("child_process");
 let hw_status = {
   CPU: ["", "", "", ""],
   GPU: "",
-  MEM: "",
-  S_MEM: "",
+  MEM: ["", ""],
+  S_MEM: ["", ""],
   PLL_T: "",
   CPU_T: "",
   PMIC_T: "",
