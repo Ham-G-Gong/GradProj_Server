@@ -7,8 +7,8 @@ const path = require("path");
 let now_module;
 router.get("/result", (req, res) => {
   try {
-    const result = RunModule(req.body.module_name);
-    result = result.split(" ").forEach((r) => r.trim());
+    const result = RunModule(req.body.module_name).split(" ");
+    result.forEach((r) => r.trim());
     const img_name = execSync("bash scripts/getImage.sh").toString();
     res.status(200).json({ result: result, img_name: img_name });
   } catch (error) {
@@ -21,7 +21,6 @@ router.get("/list", (req, res) => {
       console.log(`stdout: ${data}`);
       const result = data.split(" ");
       result.forEach((e) => e.trim());
-      console.log(result);
       const now = now_module || result[0];
       res.status(200).json({ list: result, now: now });
     });

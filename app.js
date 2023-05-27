@@ -13,11 +13,11 @@ app.use(bodyParser.urlencoded());
 app.use(bodyParser.json());
 app.use(
   "/pre_image",
-  express.static(path.join(__dirname, img_folder_path, "/test_img_RGB"))
+  express.static(path.join(__dirname, img_folder_path, "/test/IMG/val"))
 );
 app.use(
   "/post_image",
-  express.static(path.join(__dirname, img_folder_path, "/evalDirectory_RGB"))
+  express.static(path.join(__dirname, img_folder_path, "/RGB_FANet"))
 );
 app.use("/hardware", hardware);
 app.use("/ai_module", ai_module);
